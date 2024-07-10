@@ -1,0 +1,143 @@
+@charset "UTF-8";
+.coop__container {
+  padding: 0 40px;
+}
+.coop__list {
+  max-width: 831px;
+}
+.coop__title {
+  margin: 33px 0;
+}
+.coop__subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 12px;
+}
+.coop__sublist-item {
+  margin-bottom: 12px;
+}
+.coop__text {
+  font-size: 16px;
+  line-height: 180%;
+  color: #666;
+}
+.coop__you-get-list {
+  max-width: 624px;
+}
+.coop__you-get-list .coop__text {
+  line-height: 150%;
+}
+.coop__you-get-list .coop__sublist-item {
+  padding-left: 37px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: left top;
+}
+.coop__you-get-list .coop__sublist-item:nth-child(1) {
+  background-image: url(../images/network.svg);
+}
+.coop__you-get-list .coop__sublist-item:nth-child(2) {
+  background-image: url(../images/briefcase.svg);
+}
+.coop__you-get-list .coop__sublist-item:nth-child(3) {
+  background-image: url(../images/git-pull-request.svg);
+}
+.coop__item {
+  margin-bottom: 31px;
+}
+.coop__possibility-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FF862F;
+  margin-bottom: 12px;
+}
+.coop__guarantees-list, .coop__possibility-list {
+  counter-reset: my-counter;
+}
+.coop__guarantees-item {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 13px;
+}
+.coop__possibility-item {
+  position: relative;
+  padding-top: 35px;
+}
+.coop__guarantees-item::before, .coop__possibility-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  counter-increment: my-counter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #FF862F;
+}
+.coop__possibility-item::before {
+  content: "Возможность " counter(my-counter) ":";
+}
+.coop__guarantees-item::before {
+  content: counter(my-counter) ".";
+}
+.coop__warranty-period-info {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 150%;
+  padding-left: 110px;
+  max-width: 624px;
+  min-height: 116px;
+  background-image: url(../images/pen.webp);
+  background-repeat: no-repeat;
+  background-size: 77px 116px;
+  background-position: left center;
+  margin-top: 35px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 1349px) {
+  .coop__container {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 970px) {
+  .coop__container {
+    padding: 0 72px;
+  }
+}
+@media (max-width: 560px) {
+  .coop__container {
+    padding: 0 12px;
+  }
+  .coop__title {
+    margin: 31px 0;
+  }
+  .coop__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .coop__possibilities-list-title {
+    font-size: 14px;
+  }
+  .coop__possibility-item {
+    padding-top: 31px;
+  }
+  .coop__text {
+    font-size: 14px;
+  }
+  .coop__possibility-item::before {
+    top: -5px;
+  }
+  .coop__guarantees-item {
+    margin-bottom: 9px;
+  }
+  .coop__warranty-period-info {
+    font-size: 16px;
+    line-height: 150%;
+    background-size: 36px 54px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    padding-left: 52px;
+  }
+}/*# sourceMappingURL=coop.css.map */
